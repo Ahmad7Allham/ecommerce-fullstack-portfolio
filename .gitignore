@@ -1,0 +1,44 @@
+# Dependencies
+**/node_modules/
+
+# Next.js build output
+front-end/.next/
+front-end/out/
+front-end/.vercel/
+
+# Strapi generated files
+back-end-strapi/.cache/
+back-end-strapi/.tmp/
+back-end-strapi/.strapi/
+back-end-strapi/build/
+back-end-strapi/dist/
+
+# Environment variables and secrets
+**/.env
+**/.env.*
+!back-end-strapi/.env.example
+
+# Strapi local uploads
+back-end-strapi/public/uploads/*
+!back-end-strapi/public/uploads/.gitkeep
+
+# Local databases
+**/*.sqlite
+**/*.sqlite3
+
+# Logs and temporary files
+**/*.log
+.DS_Store
+Thumbs.db
+*.pem
+# Local VS Code settings
+.vscode/
+**/.vscode/
+
+# Temporary development notes
+front-end/MINIMAL-PHASE-B.md
+front-end/PHASE-B-NOTES.md
+front-end/PHASE-C-APPLY-AR.md
+
+# Old product route backup
+front-end/product-details-productId-backup/
