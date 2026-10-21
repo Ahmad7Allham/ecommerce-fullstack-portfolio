@@ -20,25 +20,25 @@ export default function RootLayout({ children }) {
     const [cartError, setCartError] = useState("");
 
     return (
-        <ClerkProvider>
-            <CartContext.Provider
-                value={{
-                    cart,
-                    setCart,
-                    isCartLoading,
-                    setIsCartLoading,
-                    cartError,
-                    setCartError,
-                }}
-            >
-                <html lang="en" data-scroll-behavior="smooth">
-                    <body className={`${roboto.className} ${roboto.variable}`}>
+        <html lang="en" data-scroll-behavior="smooth">
+            <body className={`${roboto.className} ${roboto.variable}`}>
+                <ClerkProvider>
+                    <CartContext.Provider
+                        value={{
+                            cart,
+                            setCart,
+                            isCartLoading,
+                            setIsCartLoading,
+                            cartError,
+                            setCartError,
+                        }}
+                    >
                         <Header />
                         {children}
                         <Footer />
-                    </body>
-                </html>
-            </CartContext.Provider>
-        </ClerkProvider>
+                    </CartContext.Provider>
+                </ClerkProvider>
+            </body>
+        </html>
     );
 }
