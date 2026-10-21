@@ -9,7 +9,7 @@ import Link from "next/link";
 import CheckoutForm from "./_components/CheckoutForm";
 
 const stripePromise = loadStripe(
-     process.env.NEXT_PUBLIC_STRIPE_PUBLISHER_KEY
+     process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 );
 
 function CheckoutContent() {
