@@ -115,7 +115,7 @@ function Cart() {
                                    <button
                                         type="button"
                                         onClick={() => router.push("/#products")}
-                                        className="mt-4 rounded bg-gray-700 px-5 py-3 text-sm text-white transition hover:bg-gray-600"
+                                        className="mt-4 rounded bg-gray-700 px-5 py-3 text-sm text-white transition hover:bg-primary"
                                    >
                                         Continue shopping
                                    </button>
